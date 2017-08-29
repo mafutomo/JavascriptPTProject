@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Authentic Indo Food</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <!-- To make Montserrat font work -->
+
+
+  <!-- Custom CSS -->
+  <link href="css/portfolio-item.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="fullWidth">
+      <div class="navContainer">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+          <a class="navbar-brand" href="index.html">Authentic Indonesian Cuisine</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#addCuisineFullView">Add A Cuisine!</a>
+            </li>
+
+
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container-fluid">
+    <div class="fullWidth" id="detailFullView">
+      <div class="detailView">
+
+
+        <!-- Portfolio Item Row -->
+
+        <div class="row" id="detailViewFood">
+
+          <div>
+            <img class="img-responsive" id="detailPic" src="./images/indo_spread.jpg" alt="">
+          </div>
+          <hr class="utensilLine"></hr>
+
+          <!-- Portfolio Item Heading -->
+          <div class="row" id="pageHeaderOverview">
+            <div class="col-lg-12">
+              <h1 class="page-header" id="foodTitle"> Salam!
+                    </h1>
+              <p id="foodNickname"></p>
+            </div>
+          </div>
+          <!-- /.row -->
+
+          <div>
+
+            <!-- <h3 id="descSubtitle">Overview</h3> -->
+            <p id="foodDesc">Hello! Here you can find a diverse list of traditional Indonesian cuisine. Click on any of the photos below to learn more. You can also add your own Indonesian cuisine.</p>
+          </div>
+
+        </div>
+        <!-- /.row -->
+      </div>
+    </div>
+
+    <!-- Collection View Row -->
+    <div class="row" id="collectionRow">
+
+      <!-- Collection View Header -->
+      <div class="col-lg-12">
+        <h3 class="page-header">Cuisine Collection </h3>
+      </div>
+      <!-- jQuery inserts here -->
+
+    </div>
+
+
+
+    <!-- Add Cuisine Section -->
+    <section class="fullWidth" id="addCuisineFullView">
+
+        <div id="addACuisine">
+            <div class="row" id="padding">
+                <div class="col-lg-12 text-center" id="addCuisineHeader">
+                  <hr class="utensilLine"></hr>
+                    <h2 class="page-header">Add A Cuisine!</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="name">Food Name</label>
+                                <input type="text" class="form-control" placeholder="What is it called?" id="name" required data-validation-required-message="Please enter the food name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        <form name="sentMessage" id="contactForm" novalidate>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label for="name">Food Nickname</label>
+                                    <input type="text" class="form-control" placeholder="What is it also known as?" id="name" required data-validation-required-message="Please enter the food name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="email">Preview Image Link</label>
+                                <input type="email" class="form-control" placeholder="Insert preview image link here" id="email" required data-validation-required-message="Please enter an image link for the preview.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="phone">Main Image Link</label>
+                                <input type="tel" class="form-control" placeholder="Insert main image link here" id="phone" required data-validation-required-message="Please enter a main image link.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="message">Description</label>
+                                <textarea rows="5" class="form-control" placeholder="What would you like to say about this cuisine?" id="message" required data-validation-required-message="Please enter a description."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="copyright">
+          <p>Copyright &copy; Melissa's Badass Website</p>
+        </div>
+      </div>
+      <!-- /.row -->
+    </footer>
+  </div>
+  <!-- /.container -->
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <!-- To make fork and knife icon work -->
+  <script src="https://use.fontawesome.com/464fe3442f.js"></script>
+
+
+</body>
+
+</html>

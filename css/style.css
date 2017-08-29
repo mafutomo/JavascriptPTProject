@@ -1,0 +1,176 @@
+body {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.page-header {
+  border: none;
+  /*overriding white border*/
+}
+
+.navbar {
+  min-height: 100px;
+  /*setting the height of the navbar*/
+  display: fixed;
+  /*when user scrolls navbar will stay*/
+  text-transform: uppercase;
+  font-size: 1.5em;
+  /*em changes with the viewport as oppose to px*/
+  background-color: #19380F;
+}
+
+/*the green part of the site*/
+.fullWidth
+{
+  width: 70%;
+  margin: auto;
+}
+
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-header {
+  vertical-align: middle;
+  /*middle of the navbar*/
+}
+
+.navbar-inverse .navbar-brand {
+  color: #fff
+}
+
+.navbar-brand {
+  font-size: 1.2em;
+  padding-top: 1.5em;
+}
+
+.navbar-nav {
+  /*the rigth part of the navbar*/
+  float: right;
+  padding-top: 1.2em;
+  text-transform: none;
+}
+
+.container-fluid {
+  /*overriding extra container*/
+  left: 0;
+  padding: 0
+}
+
+#detailFullView {
+  background-color: #658D5B;
+  width: 100%;
+  left: 0
+}
+
+.detailView {
+  width: 60vw;
+  margin: auto;
+}
+
+.detailView img {
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 25px;
+  padding-bottom: 15px;
+  /*margin - outside divs. padding - inside of divs.*/
+}
+
+hr.utensilLine {
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+  color: #fff;
+}
+
+
+/*the fork itself*/
+
+hr.utensilLine:after {
+  content: "\f0f5";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  font-size: 2.5em;
+  padding: 0 .25em;
+  background-color: #658D5B;
+  font-weight: 200;
+}
+
+
+/*add-on for overview title*/
+#pageHeaderOverview {
+  text-align: center;
+  margin: auto;
+}
+
+.page-header {
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+#foodNickname {
+  margin: auto;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #fff;
+}
+
+#foodDesc {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.row {
+  margin: 1em;
+}
+
+.portfolio-item {
+  border-radius: 15px;
+}
+
+.colName {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+/*Form Section*/
+#addACuisine {
+    padding: 50px 0;
+}
+
+#addCuisineFullView {
+  background-color: #658D5B;
+  width: 100%;
+  left: 0
+}
+
+/*Add Button*/
+.btn-success {
+    background-color: #870909;
+    border-color: #870909;
+}
+
+/*Copyright*/
+.copyright {
+  text-align: center;
+}
+
+label {
+  color: white;
+  font-size: 1.4em;
+}
